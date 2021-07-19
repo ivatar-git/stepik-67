@@ -1,12 +1,8 @@
-sum = 0 #переменная для суммы input
-pow = 0 #переменная суммы квадратов input
+sum, pow = 0, 0
 while True: #бесконечный цикл
     a = int(input())
     sum += a #суммируем input
-
-    if sum == 0: #печатаем накопленный pow и разрываем цикл
-        print(pow + a ** 2)
+    pow += a ** 2 #суммируем квадраты input
+    if sum == 0: #разрываем цикл
         break
-
-    else: #суммируем pow
-        pow += a ** 2
+print (pow)
