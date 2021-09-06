@@ -30,6 +30,3 @@ for row in data:
 data.sort(key=itemgetter(1,2), reverse=True)
 for row in data:
  print('{: <33} | {: <2} | {: <2} | {: <2} | {: <7} | {: <7} | {: <18} | {: <11} | {: <11} | {: <2} '.format(*row))
-
-
-
