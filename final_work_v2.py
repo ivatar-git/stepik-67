@@ -1,9 +1,10 @@
-#coding=utf8
+# coding=utf8
+
+from tkinter import *
+from tkinter import messagebox
 
 import cv2
 import numpy as np
-from tkinter import *
-from tkinter import messagebox
 from PIL import Image, ImageTk
 
 
@@ -48,7 +49,6 @@ class My_window:
     # функция получает кадр из камеры, изменяет яркость и конвертирует BGR>RGB
     def get_frame(self):
         ret, frame = self.cap.read()
-
         frame = cv2.flip(frame, 1)  # зеркалим кадр по горизонтали для удобства
 
         ##магия с brightness обработкой в hsv
